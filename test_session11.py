@@ -114,44 +114,44 @@ def test_crop_by_percent():
 
 def test_zip_convert_to_png():
 
-    command = f'python image_editor --input_path {image_folder_path} --output_path {images_target_path} --choice j2p'
+    command = f'python image_editor_app --input_path {image_folder_path} --output_path {images_target_path} --choice j2p'
     execute_command =  os.system(command)
     assert not execute_command, "JPG/JPEG Conversion failed"
 
 def test_zip_convert_to_jpg():
 
-    command = f'python image_editor --input_path {image_folder_path} --output_path {images_target_path} --choice p2j'
+    command = f'python image_editor_app --input_path {image_folder_path} --output_path {images_target_path} --choice p2j'
     execute_command = os.system(command)
     assert not execute_command, "PNG Conversion failed"
 
 def test_zip_resize_to_percent():
 
-    command = f'python image_editor --input_path {image_folder_path} --output_path {images_target_path} --choice res_p --resizer_value 80'
+    command = f'python image_editor_app --input_path {image_folder_path} --output_path {images_target_path} --choice res_p --resizer_value 80'
     execute_command = os.system(command)
     assert not execute_command, "Image Resize by Percent failed"
 
 def test_zip_resize_to_width():
 
-    command = f'python image_editor --input_path {image_folder_path} --output_path {images_target_path} --choice res_w --resizer_value 500'
+    command = f'python image_editor_app --input_path {image_folder_path} --output_path {images_target_path} --choice res_w --resizer_value 500'
     execute_command = os.system(command)
     assert not execute_command, "Image Resize by Width failed"
 
 def test_zip_resize_height():
 
-    command = f'python image_editor --input_path {image_folder_path} --output_path {images_target_path} --choice res_h --resizer_value 500'
+    command = f'python image_editor_app --input_path {image_folder_path} --output_path {images_target_path} --choice res_h --resizer_value 500'
     execute_command = os.system(command)
     assert not execute_command, "Image Resize by Height failed"
 
 
 def test_zip_center_crop_pixel():
 
-    command = f'python image_editor --input_path {image_folder_path} --output_path {images_target_path} --choice crp_px --cropper_value 224,224'
+    command = f'python image_editor_app --input_path {image_folder_path} --output_path {images_target_path} --choice crp_px --cropper_value 224,224'
     execute_command = os.system(command)
     assert not execute_command, "Image Cropping by Pixel failed"
 
 def test_zip_center_crop_pixel():
 
-    command = f'python image_editor --input_path {image_folder_path} --output_path {images_target_path} --choice crp_p --cropper_value 50,50'
+    command = f'python image_editor_app --input_path {image_folder_path} --output_path {images_target_path} --choice crp_p --cropper_value 50,50'
     execute_command = os.system(command)
     assert not execute_command, "Image Cropping by Percentage failed"
 
