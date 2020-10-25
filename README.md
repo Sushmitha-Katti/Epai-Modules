@@ -37,13 +37,16 @@ Create these modules:
 1. ### jpg_to_png
 It converts png images to jpeg
         usage : python jpg_to_png.py --source <path> --target <path>
+
 2. ### png_to_jpg
 converts jpg images to png
         usage : python png_to_jpg.py --source <path> --target <path>
+
 3. ### cropper
     * crops the image by percentage/pixel
     * It prints the image names which are not cropped because of size mismatch 
         usage : python cropper.py --source <path> --target <path> --choice <crop_p/crop_px> --value <width>, <height>
+        
 4. ### resizer : 
     * resizes the images by percentage/width/height
     * In all the cases aspect ratio is maintained
