@@ -1,0 +1,4 @@
+{
+  "test_session11.py::test_zip_arguments": true,
+  "test_session11.py::test_zip_center_crop_to_224_224": true
+}
